@@ -253,12 +253,14 @@ function get20s(array, dates) {
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(/*code here*/) {
-    /* code here */
-  }
-  
-  /**
 
+
+function removeArtist(array,number){
+  
+  array.splice(array.indexOf(number), 1);
+  return console.log(array.length);
+
+}
 
 
 
@@ -274,12 +276,12 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should console.log() the new array with information added"*/
 
-function addArtist(/* Code here */){
+function addArtist(array, id, name, genre, years, nationality, bio){
+  array.push({id, name, genre, years, nationality, bio})
+  console.log(array);
+}
 
-    /* Code here */
-
-  }
-
+// addArtist(artists, 21, 'Mars Mendes', 'post-Absurd Absurdism', '1995 - present day', 'extradimensional time being or "American"', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.')
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
     (1) artists array 
