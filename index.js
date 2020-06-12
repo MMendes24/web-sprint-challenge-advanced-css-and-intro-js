@@ -282,6 +282,7 @@ function addArtist(array, id, name, genre, years, nationality, bio){
 }
 
 // addArtist(artists, 21, 'Mars Mendes', 'post-Absurd Absurdism', '1995 - present day', 'extradimensional time being or "American"', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.')
+
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
     (1) artists array 
@@ -290,11 +291,16 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/* Code here */){
-
-  /* Code here */
-
+function lotsOfArt(array){
+  let newArray = []
+  for(i = 0; i < array.length; i++){
+    if (array[i].paintings >= 100){
+      newArray.push(array[i]);
+    }
+  }
+  console.log(newArray)
 }
+
 
 
 
