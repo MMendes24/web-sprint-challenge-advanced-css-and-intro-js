@@ -216,7 +216,6 @@ console.log(artists[2].bio)
 artists[8].name = "Vincent van Gogh"
 console.log(artists[8])
 
-
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
  *     (1) artists array
  *     (2) a number which is the desired index in the array.
@@ -225,11 +224,10 @@ console.log(artists[8])
  * For example, if getArtistByIndex is invoked with the artists dataset and the number 0,
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
+
 function getArtistByIndex(array, index) {
-    /* code here */
-  }
-  
-  /**
+  return `The artist at index ${array[index].id} is ${array[index].name}`;
+ }
 
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who lived in the 20th century (1900-2000) */
